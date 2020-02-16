@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from django.http import HttpResponse 
 from rango.models import Category
 from rango.models import Page
@@ -53,3 +54,20 @@ def show_category(request, category_name_slug):
 		
 	# Go render the response and return it to the client. 
 	return render(request, 'rango/category.html', context=context_dict)
+=======
+
+from django.http import HttpResponse
+
+def index(request):
+    # Construct a directory to pass to the template engine as its context.
+    # Note the key boldmessage matches to {{ boldmessage }} in the template!
+    context_dict = {'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!'}
+
+    # Return a rendered response to send to the client.
+    # We make use of the shortcut function to make our lives easier.
+    # Note that the first parameter is the template we wish to use.
+    return render(request, 'rango/index.html', context=context_dict)
+
+def about(request):
+    return render(request, 'rango/about.html')
+>>>>>>> 869b45a7fc1118c6dc3f3dce56330b98b589af3f
