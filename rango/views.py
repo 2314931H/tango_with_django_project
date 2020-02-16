@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d4de8fe961fdb9096503bdabff8282bd4afbf255
 from django.shortcuts import redirect, render
 from django.http import HttpResponse 
 from django.urls import reverse 
@@ -108,4 +112,21 @@ def add_page(request, category_name_slug):
 	
 	context_dict = {'form': form, 'category': category}
 	return render(request, 'rango/add_page.html', context=context_dict) 
+<<<<<<< HEAD
 	
+=======
+	
+=======
+from django.shortcuts import render
+
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Rango says hey there partner! \
+<a href='/rango/about/'>About</a>") 
+
+def about(request):
+    return HttpResponse("Rango says here is the about page. \
+<a href='/rango/'>Index</a>")
+>>>>>>> e777434e43069fb9fea6c4bb2b154dcc15c41f1a
+>>>>>>> d4de8fe961fdb9096503bdabff8282bd4afbf255

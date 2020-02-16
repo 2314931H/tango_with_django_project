@@ -14,6 +14,10 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d4de8fe961fdb9096503bdabff8282bd4afbf255
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATIC_DIR,]
@@ -21,6 +25,12 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> e777434e43069fb9fea6c4bb2b154dcc15c41f1a
+>>>>>>> d4de8fe961fdb9096503bdabff8282bd4afbf255
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -61,7 +71,15 @@ ROOT_URLCONF = 'tango_with_django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [TEMPLATE_DIR,],
+=======
+<<<<<<< HEAD
+        'DIRS': [TEMPLATE_DIR,],
+=======
+        'DIRS': [],
+>>>>>>> e777434e43069fb9fea6c4bb2b154dcc15c41f1a
+>>>>>>> d4de8fe961fdb9096503bdabff8282bd4afbf255
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,7 +87,14 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+<<<<<<< HEAD
                 'django.template.context_processors.media',
+=======
+<<<<<<< HEAD
+                'django.template.context_processors.media',
+=======
+>>>>>>> e777434e43069fb9fea6c4bb2b154dcc15c41f1a
+>>>>>>> d4de8fe961fdb9096503bdabff8282bd4afbf255
             ],
         },
     },
