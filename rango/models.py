@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from django.template.defaultfilters import slugify
 
 # Create your models here.
@@ -30,3 +31,7 @@ class Page(models.Model):
 	def __str__(self): 
 		return self.title 
 
+=======
+
+# Create your models here.
+>>>>>>> e777434e43069fb9fea6c4bb2b154dcc15c41f1a
